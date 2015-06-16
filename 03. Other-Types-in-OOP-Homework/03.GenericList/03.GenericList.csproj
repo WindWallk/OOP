@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FAEA52A-DD41-4DD2-89E2-E9C9D92D62F9}</ProjectGuid>
+    <ProjectGuid>{3CC44F59-EED8-4FFC-85BA-7D6E4517FD66}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_03.GenericList</RootNamespace>
@@ -44,8 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GenericList.cs" />
-    <Compile Include="TestList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
