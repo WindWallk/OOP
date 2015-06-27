@@ -1,0 +1,48 @@
+1.Which .NET data types are value types? Which types are reference types?
+
+								Vakue types:
+A data type is a value type if it holds the data within its own memory allocation. Value types include the following:
+All numeric data types
+Boolean , Char, and Date
+All structures, even if their members are reference types
+Enumerations, since their underlying type is always SByte, Short, Integer, Long, Byte, UShort, UInteger, or ULong
+Every structure is a value type, even if it contains reference type members. For this reason, value types such as Char and Integer are implemented by .NET Framework structures.
+
+							Reference types:
+A reference type contains a pointer to another memory location that holds the data. Reference types include the following:
+String
+All arrays, even if their elements are value types
+Class types, such as Form
+Delegates
+A class is a reference type. For this reason, reference types such as Object and String are supported by 
+.NET Framework classes. Note that every array is a reference type, even if its members are value types.
+
+2.How do value and reference types differ when assigned to a variable? 
+
+Value types are stored in the stack and reference types are stored in the heap with a pointer in the stack pointing to the place they are stored in the heap.
+value types do not require "new" when they are assigned, reference types do.
+
+3.How do value and reference types behave when passed as argument to a method?
+
+For value types the value is passed, but for the reference types it's the pointer that is passed.
+
+4.Where in memory are value types allocated? Where are reference types allocated?
+
+Value types - stack
+Reference Types - heap with a pointer in the stack
+
+5.What is data mutation? Can value types be mutated? Can reference types be mutated?
+
+Data mutation is used to generating a large number of test data from a few seed test cases
+Both value and reference types can be mutated(I think)
+
+6.What is the difference between mutating and setting (assigning) a variable? Give examples.
+
+I have no idea....
+
+7.What are the out and ref keywords used for? In what do they differ?
+
+The out contextual keyword is used  in two contexts (each is a link to detailed information), as a parameter modifier or in generic type parameter declarations in interfaces and delegates.
+The ref keyword causes an argument to be passed by reference, not by value. The effect of passing by reference is that any change to the parameter in the called method is reflected in the calling method.
+
+THe difference between REF and OUT is taht the REF keyword requires that the variable be initialized before it is passed and OUT do not require initialization.
